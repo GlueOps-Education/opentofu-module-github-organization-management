@@ -1,4 +1,3 @@
-# opentofu-module-github-organization-management
 <!-- BEGIN_TF_DOCS -->
 # OpenTofu Module: GitHub Organization Management
 
