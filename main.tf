@@ -45,7 +45,7 @@ resource "github_organization_settings" "default" {
 
 resource "github_membership" "membership" {
   provider = github.github_org
-  for_each = toset(var.usernames)
+  for_each = toset(var.members)
   username = each.value
   role     = "member"
 }
