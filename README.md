@@ -56,10 +56,10 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_billing_email"></a> [billing\_email](#input\_billing\_email) | The email address for billing notifications. | `string` | n/a | yes |
 | <a name="input_enterprise_name"></a> [enterprise\_name](#input\_enterprise\_name) | The name of the GitHub Enterprise. | `string` | n/a | yes |
+| <a name="input_members"></a> [members](#input\_members) | A list of GitHub usernames to grant membership to. | `list(string)` | `[]` | no |
 | <a name="input_organization_admins"></a> [organization\_admins](#input\_organization\_admins) | A list of GitHub usernames for organization admins. | `list(string)` | n/a | yes |
 | <a name="input_organization_name"></a> [organization\_name](#input\_organization\_name) | The name of the GitHub organization. Have this start with a 4 digit year and then the semester/quarter name e.g. 2025-FALL | `string` | n/a | yes |
 | <a name="input_school_name"></a> [school\_name](#input\_school\_name) | The name of the GitHub organization. | `string` | n/a | yes |
-| <a name="input_usernames"></a> [usernames](#input\_usernames) | A list of GitHub usernames to grant membership to. | `list(string)` | `[]` | no |
 
 ## Outputs
 
