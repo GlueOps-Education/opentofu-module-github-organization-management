@@ -6,7 +6,7 @@ resource "github_enterprise_organization" "default" {
   enterprise_id = data.github_enterprise.default.id
   name          = var.organization_name
   display_name  = var.organization_name
-  description   = "Organization for {var.school_name}"
+  description   = "Organization for ${var.school_name}"
   billing_email = var.billing_email
   admin_logins  = var.organization_admins
 }
@@ -22,10 +22,10 @@ resource "github_organization_settings" "default" {
   billing_email                                                = var.billing_email
   company                                                      = var.school_name
   email                                                        = var.billing_email
-  description                                                  = "Organization for {var.school_name}"
+  description                                                  = "Organization for ${var.school_name}"
   has_organization_projects                                    = false
   has_repository_projects                                      = false
-  default_repository_permission                                = "none"
+  default_repository_permission                                = "write"
   members_can_create_repositories                              = false
   members_can_create_public_repositories                       = false
   members_can_create_private_repositories                      = false
