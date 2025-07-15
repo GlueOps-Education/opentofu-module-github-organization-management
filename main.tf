@@ -43,6 +43,13 @@ resource "github_organization_settings" "default" {
   secret_scanning_push_protection_enabled_for_new_repositories = false
 }
 
+resource "github_membership" "membership" {
+  provider = github.github_org
+  for_each = toset(var.usernames)
+  username = each.value
+  role     = "member"
+}
+
 
 output "github_organization_name" {
   value = github_enterprise_organization.default.name
