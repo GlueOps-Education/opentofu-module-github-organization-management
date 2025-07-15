@@ -54,3 +54,4 @@ resource "github_membership" "membership" {
 output "github_organization_name" {
   value = github_enterprise_organization.default.name
 }
+
