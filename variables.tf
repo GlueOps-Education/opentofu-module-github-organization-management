@@ -22,3 +22,9 @@ variable "organization_admins" {
   description = "A list of GitHub usernames for organization admins."
   type        = list(string)
 }
+
+variable "usernames" {
+  description = "A list of GitHub usernames to grant membership to."
+  type        = list(string)
+  default     = []
+}
