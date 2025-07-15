@@ -4,7 +4,7 @@ variable "enterprise_name" {
 }
 
 variable "organization_name" {
-  description = "The name of the GitHub organization."
+  description = "The name of the GitHub organization. Have this start with a 4 digit year and then the semester/quarter name e.g. 2025-FALL"
   type        = string
 }
 
