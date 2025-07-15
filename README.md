@@ -46,6 +46,7 @@ No modules.
 | Name | Type |
 |------|------|
 | [github_enterprise_organization.default](https://registry.terraform.io/providers/hashicorp/github/latest/docs/resources/enterprise_organization) | resource |
+| [github_membership.membership](https://registry.terraform.io/providers/hashicorp/github/latest/docs/resources/membership) | resource |
 | [github_organization_settings.default](https://registry.terraform.io/providers/hashicorp/github/latest/docs/resources/organization_settings) | resource |
 | [github_enterprise.default](https://registry.terraform.io/providers/hashicorp/github/latest/docs/data-sources/enterprise) | data source |
 
@@ -58,6 +59,7 @@ No modules.
 | <a name="input_organization_admins"></a> [organization\_admins](#input\_organization\_admins) | A list of GitHub usernames for organization admins. | `list(string)` | n/a | yes |
 | <a name="input_organization_name"></a> [organization\_name](#input\_organization\_name) | The name of the GitHub organization. Have this start with a 4 digit year and then the semester/quarter name e.g. 2025-FALL | `string` | n/a | yes |
 | <a name="input_school_name"></a> [school\_name](#input\_school\_name) | The name of the GitHub organization. | `string` | n/a | yes |
+| <a name="input_usernames"></a> [usernames](#input\_usernames) | A list of GitHub usernames to grant membership to. | `list(string)` | `[]` | no |
 
 ## Outputs
 
